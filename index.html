@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+   
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+        }
+.header{
+   
+    background-color: blue;
+    text-align: center;
+    padding: 20px;
+}
+
+.top-nav{
+    background-color: black;
+}
+.top-nav a{
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px ;
+    color: white;
+   display: inline-block;
+   
+}
+.top-nav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.column{
+    padding: 10px ;
+    float: left;
+
+}
+.column.side{
+    width: 25%;
+
+}
+.column.middle{
+    width: 50%;
+
+}
+
+.footer{
+   
+   background-color: blue;
+   text-align: center;
+   padding: 20px;
+}
+.row::after{
+    content: "";
+clear: both;
+display: table;
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+
+    <div class="top-nav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+
+    <div class="row">
+        <div class="column side">
+            <h2>Side</h2>
+            <p>LoremIpusmLoremIpusmLoremIpusm</p>
+
+        </div>
+
+
+        <div class="column middle">
+            <h2>Main Content</h2>
+            <p>LoremIpusmLoremIpusmLoremIpusmremIpusmLoremIpusmLoremIpusmLoremIpusmLoremIpusm
+                <br>LoremIpusmLoremIpusmLoremIpusmremIpusmLoremIpusmLoremIpusmLoremIpusmLoremIpusm
+                <br>LoremIpusmLoremIpusmLoremIpusmremIpusmLoremIpusmLoremIpusmLoremIpusmLoremIpusm
+                <br>LoremIpusmLoremIpusmLoremIpusmremIpusmLoremIpusmLoremIpusmLoremIpusmLoremIpusm
+
+            </p>
+
+        </div>
+
+        <div class="column side">
+            <h2>Side</h2>
+            <p>LoremIpusmLoremIpusmLoremIpusmLoremIpusm</p>
+          
+        </div>
+
+      
+    </div>
+
+    <div class="footer">
+        <h1>Footer</h1>
+    </div>
+</body>
+</html>
